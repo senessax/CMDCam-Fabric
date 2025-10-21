@@ -13,6 +13,7 @@
   ],
   "client": [
     "CameraMixin",
+    "DisplayRendererMixin",
     "CurrentViewEntityMixin",
     "EntitySelectorMixin",
     "GameRendererAccessor",
