@@ -15,6 +15,7 @@ import org.joml.Quaternionf;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import team.creative.cmdcam.client.mixin.DisplayAccessor;
 
 @Mixin(DisplayRenderer.class)
 public class DisplayRendererMixin {
@@ -31,7 +32,7 @@ public class DisplayRendererMixin {
             return;
         }
 
-        BillboardConstraints bb = d.getBillboardConstraints();
+        BillboardConstraints bb = ((DisplayAccessor) d).cmdcam$getBillboard();
         if (bb == BillboardConstraints.FIXED) {
             pose.mulPose(ignored);
             return;

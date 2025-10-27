@@ -6,6 +6,7 @@
   ],
   "mixins": [
     "ArgumentTypeInfosAccessor",
+    "DisplayAccessor",
     "LocalCoordinatesAccessor",
     "MinecraftServerAccessor",
     "ServerLevelAccessor",
@@ -13,8 +14,8 @@
   ],
   "client": [
     "CameraMixin",
-    "DisplayRendererMixin",
     "CurrentViewEntityMixin",
+    "DisplayRendererMixin",
     "EntitySelectorMixin",
     "GameRendererAccessor",
     "GameRendererMixin",
